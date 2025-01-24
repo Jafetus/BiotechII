@@ -1,0 +1,117 @@
+"HELL"
+2+9
+HELL
+Data = c(1,2,3)
+data
+view(Data)
+view (Data)
+jafetsdataframe <- data.frame(
+  name = c("lee", "pete"),
+  age = c(21, 34),
+  height = c(176, 185)
+)
+jafetsdataframe
+attach(jafetsdataframe)
+plot(age - height)
+getwd(
+)
+setwd("/Users/Student/Documents")
+library(ggplot)
+90982/20
+20^4
+Practicedataframe <- data.frame(
+  Name = c("Autumn", "Jafet", "Alan"),
+  Age = c(24, 23, 24),
+  Height = c(169, 178, 189)
+)
+attach(Practicedataframe)
+plot(Age - Height)
+plot(Height - Name)
+plot(Height)
+
+#### <- assigns data to variable #####
+x <- 3
+x
+x<-3
+x < - 3
+(x<-3)
+(y <- 5)
+y+x
+X == x
+x == x
+X!= x
+x!= x
+y^2/x^2
+y^67*x^4
+(x+4)^2/(y*2)+20.98^8
+z <- 7
+z
+Jafet <- 25.78
+Jafet+z/x*y
+class(Jafet)
+q <- 10L
+class(q)
+WVSU <- "school"
+class(WVSU)
+m <- TRUE 
+n <- FALSE
+m
+n
+w <- 1+1i
+
+#Vectors, 1 Dimensinal data#
+leesvector <- c(9,8,7,6,5,4,3,2,1)
+leesvector
+class(leesvector)
+myv2 <- 1:100
+myv2
+# Matrix 2 dimensional data #
+matrix <- matrix(leesvector, nrow = 5, ncol = 10)
+matrix
+df <- data.frame(id = c("A","B","C","D","E","f","G","H","I","J"), values = matrix)
+df
+
+#More vectors, characters, names, and other fun things 
+n_vec <- numeric(9)
+n_vec<- c(1,2,3,4,5,6,7,8)
+n_vec[7]<- 7
+n_vec
+n_vec[4] <-n_vec[7]
+cha_vector <- c("my", "friend", "kylee", "smells" )
+cha_vector[c(1, 3)]
+names(n_vec) <-c("Frodo", "Gandalf", "smeagle", "Bilbo", "Smoug", "kindledOne", "Artorias", "LoneKnightGale")
+n_vec
+n_vec[c("Frodo", "Smoug")]
+
+#  Activity: Creatimg and editing vectors ###
+CNVEC <- c(1,2,3,4,5)
+CNCHA <- c("Owl", "Eagle", "Pidgeon", "Rooster", "Hawk")
+CNVEC <- c(CNCHA)
+NVC <- CNVEC[c(1 ,3 ,5)]
+NVC
+NVC2 <- CNCHA(NVC)
+
+# Math and Other Equations #
+(x+y)*(x-y)
+y/x
+x^2
+2^(y-x)
+sqrt(x)
+log10(z)
+log(z)
+log(x = x,base = 3)
+
+#Activity: Vector Math #
+Leaf_area <- c(2.5, 1.6, 2.2, 2.6)
+Leaf_mass <- c(22, 15, 20, 24)
+mean(Leaf_area)
+mean(Leaf_mass)
+median(Leaf_mass)
+median(Leaf_area)
+median(Leaf_mass) > median(Leaf_area)
+median(Leaf_mass) < median(Leaf_area)
+Leaf_mass/Leaf_area
+LMA <- Leaf_mass/Leaf_area
+mean(LMA)
+sqrt(LMA)
+sqrt(mean(LMA))
