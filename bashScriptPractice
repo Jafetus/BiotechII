@@ -1,0 +1,261 @@
+
+(base) student@H107-PN-LT:~$ nano test.sh
+(base) student@H107-PN-LT:~$ bash test.sh
+bash: test.sh: No such file or directory
+(base) student@H107-PN-LT:~$ nano test.sh
+(base) student@H107-PN-LT:~$ bash test.sh
+test.sh: line 2: echoHello, World: command not found
+(base) student@H107-PN-LT:~$ nano test.sh
+(base) student@H107-PN-LT:~$ bash test.sh
+Hello, World
+(base) student@H107-PN-LT:~$ nano
+(base) student@H107-PN-LT:~$ pwd
+/home/student
+(base) student@H107-PN-LT:~$ nano
+(base) student@H107-PN-LT:~$ ls
+ Bams
+ Drosophila_Pepper
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa
+ Drosophilagenome
+ Miniconda3-latest-Linux-x86_64.sh
+ Practice_Folder
+ SRR24032241
+ SamanthFly
+ SamanthaFly
+ SamanthaFlyAligned.sortedByCoord.out.bam
+ SamanthaFlyLog.out
+ SamanthaFlyLog.progress.out
+ SamanthaFly_STARtmp
+ _STARtmp
+ fastp
+ fastq
+ fastq_download.py
+ fastqreport
+ index.html
+ index.html.1
+ miniconda3
+ my_history.txt
+ mytext2.txt
+ test.sh
+(base) student@H107-PN-LT:~$ nano
+
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq_download.py
+ Drosophila_Pepper                                                          SamanthaFly                                fastqreport
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   index.html
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html.1
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                miniconda3
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        my_history.txt
+ Miniconda3-latest-Linux-x86_64.sh                                          _STARtmp                                   mytext2.txt
+ Practice_Folder                                                            fastp                                      test.sh
+ SRR24032241                                                                fastq
+(base) student@H107-PN-LT:~$ nano
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile                                   my_history.txt
+ Practice_Folder                                                            _STARtmp                                   mytext2.txt
+ SRR24032241                                                                fastp                                      test.sh
+(base) student@H107-PN-LT:~$ cd testfile
+-bash: cd: testfile: No such file or directory
+(base) student@H107-PN-LT:~$ ls testfile
+ls: cannot access 'testfile': No such file or directory
+(base) student@H107-PN-LT:~$ cd Testfile
+-bash: cd: Testfile: Not a directory
+(base) student@H107-PN-LT:~$ nano Testfile
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile                                   my_history.txt
+ Practice_Folder                                                            _STARtmp                                   mytext2.txt
+ SRR24032241                                                                fastp                                      test.sh
+(base) student@H107-PN-LT:~$ nano Testfile
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile                                   my_history.txt
+ Practice_Folder                                                            _STARtmp                                   mytext2.txt
+ SRR24032241                                                                fastp                                      test.sh
+(base) student@H107-PN-LT:~$ nano Testfile
+(base) student@H107-PN-LT:~$ cd Testfile
+-bash: cd: Testfile: Not a directory
+(base) student@H107-PN-LT:~$ pwd
+/home/student
+(base) student@H107-PN-LT:~$ cd Testfile
+-bash: cd: Testfile: Not a directory
+(base) student@H107-PN-LT:~$ nano Testfile
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthaFly                                fastq_download.py
+ Drosophila_Pepper                                                          SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyLog.out                         index.html
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.progress.out                index.html.1
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFly_STARtmp                        miniconda3
+ Drosophilagenome                                                           Testfile                                   my_history.txt
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile.sh                                mytext2.txt
+ Practice_Folder                                                            _STARtmp                                   test.sh
+ SRR24032241                                                                fastp
+ SamanthFly                                                                 fastq
+(base) student@H107-PN-LT:~$ bash Testfile.sh
+mkdir: cannot create directory ‘Testfile’: File exists
+touch: cannot touch 'Testfile/empty.txt': Not a directory
+(base) student@H107-PN-LT:~$ bash Testfile
+mkdir: cannot create directory ‘Testfile’: File exists
+touch: cannot touch 'Testfile/empty.txt': Not a directory
+(base) student@H107-PN-LT:~$ rm Testfile
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile.sh                                my_history.txt
+ Practice_Folder                                                            _STARtmp                                   mytext2.txt
+ SRR24032241                                                                fastp                                      test.sh
+(base) student@H107-PN-LT:~$ bash Testfile.sh
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthaFly                                fastq_download.py
+ Drosophila_Pepper                                                          SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyLog.out                         index.html
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.progress.out                index.html.1
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFly_STARtmp                        miniconda3
+ Drosophilagenome                                                           Testfile                                   my_history.txt
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile.sh                                mytext2.txt
+ Practice_Folder                                                            _STARtmp                                   test.sh
+ SRR24032241                                                                fastp
+ SamanthFly                                                                 fastq
+(base) student@H107-PN-LT:~$ ls -l
+total 308564
+drwxr-xr-x  2 student student      4096 Nov 18 16:50  Bams
+drwxr-xr-x  3 student student      4096 Nov 18 17:17  Drosophila_Pepper
+-rw-r--r--  1 student student       229 Nov 23 22:16  Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier
+-rw-r--r--  1 student student       249 Nov 23 22:15 'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'
+drwxrwxrwx  2 student student      4096 Nov 13 17:02  Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa
+drwx------  2 student student      4096 Nov 18 13:31  Drosophilagenome
+-rw-r--r--  1 student student 148981743 Aug 22 12:47  Miniconda3-latest-Linux-x86_64.sh
+drwxr-xr-x  2 student student      4096 Feb 18 18:19  Practice_Folder
+drwxr-xr-x  2 student student      4096 Nov 11 16:59  SRR24032241
+-rwxrwxrwx  1 student student 166874379 Nov 13 16:58  SamanthFly
+drwxr-xr-x 13 student student      4096 Nov 23 22:45  SamanthaFly
+-rw-r--r--  1 student student         0 Nov 24 12:33  SamanthaFlyAligned.sortedByCoord.out.bam
+-rw-r--r--  1 student student      2906 Nov 24 12:33  SamanthaFlyLog.out
+-rw-r--r--  1 student student         0 Nov 24 12:33  SamanthaFlyLog.progress.out
+drwx------  3 student student      4096 Nov 24 12:33  SamanthaFly_STARtmp
+drwxr-xr-x  2 student student      4096 Feb 20 18:13  Testfile
+-rw-r--r--  1 student student       134 Feb 20 18:12  Testfile.sh
+drwx------  2 student student      4096 Nov 23 22:45  _STARtmp
+drwxr-xr-x  6 student student      4096 Nov 18 13:29  fastp
+drwxr-xr-x  2 student student      4096 Nov 11 16:32  fastq
+-rw-r--r--  1 student student      1514 Nov 11 17:06  fastq_download.py
+drwxr-xr-x  2 student student      4096 Nov 11 18:25  fastqreport
+-rw-r--r--  1 student student     10549 Nov 13 16:36  index.html
+-rw-r--r--  1 student student      1993 Nov 13 16:38  index.html.1
+drwxr-xr-x 25 student student      4096 Nov 11 18:37  miniconda3
+-rw-r--r--  1 student student      9741 Nov 17 15:42  my_history.txt
+-rw-r--r--  1 student student         0 Feb 18 18:17  mytext2.txt
+-rw-r--r--  1 student student        33 Feb 20 17:53  test.sh
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile                                   my_history.txt
+ Notepadpluplu.sh                                                           Testfile.sh                                mytext2.txt
+ Practice_Folder                                                            _STARtmp                                   test.sh
+ SRR24032241                                                                fastp
+(base) student@H107-PN-LT:~$ cd ..
+(base) student@H107-PN-LT:/home$ ls
+student
+(base) student@H107-PN-LT:/home$ cd ..
+(base) student@H107-PN-LT:/$ ls
+bin                boot  etc   init  lib.usr-is-merged  lost+found  mnt  proc  run   sbin.usr-is-merged  srv  tmp  var
+bin.usr-is-merged  dev   home  lib   lib64              media       opt  root  sbin  snap                sys  usr
+(base) student@H107-PN-LT:/$ cd home
+(base) student@H107-PN-LT:/home$ ls
+student
+(base) student@H107-PN-LT:/home$ cd student
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile                                   my_history.txt
+ Notepadpluplu.sh                                                           Testfile.sh                                mytext2.txt
+ Practice_Folder                                                            _STARtmp                                   test.sh
+ SRR24032241                                                                fastp
+(base) student@H107-PN-LT:~$ bash Testfile
+Testfile: Testfile: Is a directory
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile                                   my_history.txt
+ Notepadpluplu.sh                                                           Testfile.sh                                mytext2.txt
+ Practice_Folder                                                            _STARtmp                                   test.sh
+ SRR24032241                                                                fastp
+(base) student@H107-PN-LT:~$ bash notepadpluplu.sh
+bash: notepadpluplu.sh: No such file or directory
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SamanthFly                                 fastq
+ Drosophila_Pepper                                                          SamanthaFly                                fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyLog.out                         index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.progress.out                index.html.1
+ Drosophilagenome                                                           SamanthaFly_STARtmp                        miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          Testfile                                   my_history.txt
+ Notepadpluplu.sh                                                           Testfile.sh                                mytext2.txt
+ Practice_Folder                                                            _STARtmp                                   test.sh
+ SRR24032241                                                                fastp
+(base) student@H107-PN-LT:~$ bash notepadpluplu.sh
+bash: notepadpluplu.sh: No such file or directory
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SRR24032241                                fastp
+ Drosophila_Pepper                                                          SamanthFly                                 fastq
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFly                                fastq_download.py
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyAligned.sortedByCoord.out.bam   fastqreport
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.out                         index.html
+ Drosophilagenome                                                           SamanthaFlyLog.progress.out                index.html.1
+ Miniconda3-latest-Linux-x86_64.sh                                          SamanthaFly_STARtmp                        miniconda3
+ Notepad2.sh                                                                Testfile                                   my_history.txt
+ Notepadpluplu.sh                                                           Testfile.sh                                mytext2.txt
+ Practice_Folder                                                            _STARtmp                                   test.sh
+(base) student@H107-PN-LT:~$ bash Notepad2.sh
+(base) student@H107-PN-LT:~$ ls
+ Bams                                                                       SRR24032241                                fastq
+ Drosophila_Pepper                                                          SamanthFly                                 fastq_download.py
+ Drosophila_melanogaster.BDGP6.46.113.gtf.gz:Zone.Identifier                SamanthaFly                                fastqreport
+'Drosophila_melanogaster.BDGP6.46.dna.toplevel (1).fa.gz:Zone.Identifier'   SamanthaFlyAligned.sortedByCoord.out.bam   index.html
+ Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa                           SamanthaFlyLog.out                         index.html.1
+ Drosophilagenome                                                           SamanthaFlyLog.progress.out                miniconda3
+ Miniconda3-latest-Linux-x86_64.sh                                          SamanthaFly_STARtmp                        my_history.txt
+ Notepad2                                                                   Testfile                                   mytext2.txt
+ Notepad2.sh                                                                Testfile.sh                                test.sh
+ Notepadpluplu.sh                                                           _STARtmp
+ Practice_Folder                                                            fastp
+(base) student@H107-PN-LT:~$ cd Notepad2
+(base) student@H107-PN-LT:~/Notepad2$ ls
+empty2.txt
+(base) student@H107-PN-LT:~/Notepad2$  https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads/ https://notepad-plus-plus.org/downloads
+-bash: https://notepad-plus-plus.org/downloads/: No such file or directory
+(base) student@H107-PN-LT:~/Notepad2$
