@@ -1,0 +1,98 @@
+title: "ss"
+author: "Jafet"
+date: "2025-04-10"
+output: html_document
+---
+
+# clear working environment
+```{r}
+rm(list=ls()) 
+```
+
+# set your working directory
+## First prepare a folder for your practice and copy/paste your folder in Rstudio
+```{r}
+setwd("/Users/Student/Documents")
+source("http://zzlab.net/GAPIT/GAPIT.library.R")
+source("http://zzlab.net/GAPIT/gapit_functions.txt")
+```
+
+
+# Import data from Zhiwu Zhang Lab
+```{r}
+library(GAPIT)
+myY <- read.table("http://zzlab.net/GAPIT/data/mdp_traits.txt", head = TRUE)
+View(myY)
+myGD=read.table(file="http://zzlab.net/GAPIT/data/mdp_numeric.txt",head=T)
+head(myGD)[ ,c(1:10)] # just check the top 10 columns 
+myGM=read.table(file="http://zzlab.net/GAPIT/data/mdp_SNP_information.txt",head=T)
+head(myGM)
+```
+
+# GWAS using MLM
+```{r}
+myGAPIT=GAPIT(
+  Y=myY[,c(1,2)], 
+  GD=myGD,
+  GM=myGM,
+  PCA.total=3,
+  model=c("MLM") )
+
+View(myGAPIT$GWAS)
+```
+#Generating Manhattan Plot
+```{r}
+library(qqman)
+library(ggplot2)
+result <- read.csv("GAPIT.Association.GWAS_Results.MLM.EarHT.csv",  header = T)
+head(result)
+
+manhattan(result, main="Ear height", chr = "Chr", bp = "Pos", p = "P.value", snp = "SNP",           
+	      col = c("red", "orange", "navy", "magenta", "green4", "honeydew4","maroon","turquoise", "yellowgreen", "black"),           
+	      genomewideline = 3.5,  highlight = "PZA03188.4"  )
+```
+# saving the Plot
+```{r}
+png("manhattan_plot.png", width = 8, height = 4, units = "in", res = 300 )
+
+manhattan(result, main="Ear height", chr = "Chr", bp = "Pos", p = "P.value", snp = "SNP",           
+	      col = c("red", "orange", "navy", "magenta", "green4", "honeydew4","maroon","turquoise", "yellowgreen", "black"),          
+	      genomewideline = 3.5,  highlight = "PZA03188.4"  )
+
+dev.off()
+```
+
+# Activity 
+```{r}
+myY <- read.table("http://zzlab.net/GAPIT/data/mdp_traits.txt", head = TRUE)
+View(myY)
+myGD=read.table(file="http://zzlab.net/GAPIT/data/mdp_numeric.txt",head=T)
+head(myGD)[ ,c(1:10)] # just check the top 10 columns 
+myGM=read.table(file="http://zzlab.net/GAPIT/data/mdp_SNP_information.txt",head=T)
+head(myGM)
+```
+
+```{r}
+myGAPIT=GAPIT(
+  Y=myY[,c(1,3)], 
+  GD=myGD,
+  GM=myGM,
+  PCA.total=3,
+  model=c("MLM"))
+```
+
+```{r}
+result2 <- read.csv("GAPIT.Association.GWAS_Results.MLM.EarHT.csv",  header = T)
+head(result2)
+manhattan(result2, main="dpoll", chr = "Chr", bp = "Pos", p = "P.value", snp = "SNP",           
+	      col = c("cyan1", "cyan2", "cyan3","cyan4", "skyblue4","lightsteelblue4", "skyblue3", "skyblue2", "skyblue1", "skyblue"),           
+	      genomewideline = 4.0,  highlight = "PZA00181.5"  )
+
+png("manhattan_plot.png", width = 8, height = 4, units = "in", res = 300 )
+
+manhattan(result2, main="dpoll", chr = "Chr", bp = "Pos", p = "P.value", snp = "SNP",           
+	       col = c("cyan1", "cyan2", "cyan3","cyan4", "skyblue4","lightsteelblue4", "skyblue3", "skyblue2", "skyblue1", "skyblue"),  
+	      genomewideline = 4.0,  highlight = "PZA00181.5"  )
+
+dev.off()
+```
